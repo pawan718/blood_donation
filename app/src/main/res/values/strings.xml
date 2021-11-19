@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">blood donation</string>
+    <string name="last_name">last name</string>
+    <string name="enter_your_blood_group">Enter your blood group</string>
+    <string name="phone_no">Phone no.</string>
+    <string name="password">Password</string>
+    <string name="address">Address</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="need_blood">Need blood</string>
+    <string name="donate_blood">Donate blood</string>
+    <string name="todo">TODO</string>
+    <string name="register">Register</string>
+    <string name="registration">Registration</string>
+    <string name="city">City</string>
+    <string name="enter_your_password">ENTER YOUR PASSWORD</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_create_account">Don\'t have an account? Create account</string>
+    <string name="email">Email</string>
+    <string name="first_name">first name</string>
+    <string name="enter_your_city">Enter your city</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <!--        <string-array name="bloodgroup">-->
+    <!--        <item>A+</item>-->
+    <!--        <item>B+</item>-->
+    <!--        <item>O+</item>-->
+    <!--        <item>AB+</item>-->
+    <!--        <item>A-</item>-->
+    <!--        <item>B-</item>-->
+    <!--        <item>O-</item>-->
+    <!--        <item>AB-</item>-->
+    <!--    </string-array>-->
+
+</resources>
