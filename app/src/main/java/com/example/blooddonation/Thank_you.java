@@ -12,6 +12,7 @@ public class Thank_you extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thank_you);
+        // android app
     }
     public void homepage(View view){
         Intent intent = new Intent(this, Mainpage.class);
