@@ -17,20 +17,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
-
-
-
-
     }
 
-    public void loginpage(View view){
-            Intent intent = new Intent(this, firstpage.class);
+    public void loginpage(View view) {
+        Intent intent = new Intent(this, firstpage.class);
         startActivity(intent);
     }
 
 
-
-    public void signuppage(View view){
+    public void signuppage(View view) {
         Intent intent = new Intent(this, MainActivity3.class);
         startActivity(intent);
     }

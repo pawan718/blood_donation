@@ -39,6 +39,9 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
         <activity
             android:name=".MapsActivity"
@@ -65,12 +68,12 @@
             android:label="blood donation"
             android:parentActivityName=".firstpage" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".MainActivity"
             android:exported="false"
             android:label="Register"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

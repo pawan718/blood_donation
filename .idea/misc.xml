@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Samarth Sinha/blooddonation/app/src/main/res/drawable/editprofile.xml" value="0.2484375" />
+        <entry key="..\:/Users/Samarth Sinha/blooddonation/app/src/main/res/drawable/home.xml" value="0.2484375" />
+        <entry key="..\:/Users/Samarth Sinha/blooddonation/app/src/main/res/drawable/round_btn.xml" value="0.2484375" />
+        <entry key="..\:/Users/Samarth Sinha/blooddonation/app/src/main/res/layout/activity_main.xml" value="0.11354166666666667" />
+        <entry key="..\:/Users/Samarth Sinha/blooddonation/app/src/main/res/layout/home.xml" value="0.6" />
+        <entry key="..\:/Users/Samarth Sinha/blooddonation/app/src/main/res/layout/splash_screen.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/pawan/AndroidStudioProjects/blooddonation/app/src/main/res/drawable/round_btn.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/pawan/AndroidStudioProjects/blooddonation/app/src/main/res/layout/activity_firstpage.xml" value="0.25" />
         <entry key="..\:/Users/pawan/AndroidStudioProjects/blooddonation/app/src/main/res/layout/activity_main.xml" value="0.25" />
@@ -26,5 +32,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.6" />
+      </ProjectState>
+    </option>
   </component>
 </project>
