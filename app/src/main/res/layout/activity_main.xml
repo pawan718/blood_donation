@@ -3,87 +3,70 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:padding="10sp"
+    android:layout_height="match_parent">
 
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/greetText"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/welcomeAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonGroup"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/greetText"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/welcome" />
 
     <LinearLayout
+        android:id="@+id/buttonGroup"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.863">
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:id="@+id/button3"
-            android:layout_width="156dp"
-            android:layout_height="88dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/round_btn"
-            android:foreground="@drawable/loginbutton"
             android:onClick="loginpage"
-            android:text="Login"
-            android:textColor="#DFDDDD"
-            android:textSize="29sp" />
+            android:text="@string/log_in"
+            app:strokeColor="@color/customBlue"
+            android:textColor="@color/customBlue"
+            android:background="@drawable/round_button_trans"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button4"
-            android:layout_width="150dp"
-            android:layout_height="87dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/round_btn"
-            android:foreground="@drawable/signupbutton"
             android:onClick="signuppage"
-            android:text="signup"
-            android:textSize="25sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="410dp"
-        android:layout_height="454dp"
-        android:layout_marginTop="120dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="454dp"
-            app:srcCompat="@drawable/bld"
-            android:transitionName="logo_heart"/>
-
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sign_up"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_btn"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="98dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:text="WELCOME TO BLOOD DONATION APP"
-            android:textColor="#DC1717"
-            android:textColorHighlight="#CC0D0D"
-            android:textColorLink="#E10D0D"
-            android:textSize="40sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

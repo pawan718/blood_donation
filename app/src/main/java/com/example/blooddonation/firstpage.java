@@ -42,7 +42,7 @@ public class firstpage extends AppCompatActivity {
 
 
                     progressDialog.show();
-                    auth.signInWithEmailAndPassword(binding.Email.getText().toString(), binding.editTextTextPassword.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    auth.signInWithEmailAndPassword(binding.Email.getEditText().getText().toString(), binding.editTextTextPassword.getEditText().getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             progressDialog.dismiss();
@@ -66,10 +66,10 @@ public class firstpage extends AppCompatActivity {
 
 
 
-//        if(auth.getCurrentUser() != null){
-//            Intent intent = new Intent(firstpage.this, Mainpage.class);
-//            startActivity(intent);
-//        }
+        if(auth.getCurrentUser() != null){
+            Intent intent = new Intent(firstpage.this, Mainpage.class);
+            startActivity(intent);
+        }
 
     }
 

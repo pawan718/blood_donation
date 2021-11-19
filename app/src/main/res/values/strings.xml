@@ -19,6 +19,14 @@
     <string name="first_name">first name</string>
     <string name="enter_your_city">Enter your city</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="log_in">LOGIN</string>
+    <string name="welcome">Welcome :) </string>
+    <string name="email_id">Email id</string>
+    <string name="registartion">Registration</string>
+
+    <string name="email_id_">Email Id</string>
     <!--        <string-array name="bloodgroup">-->
     <!--        <item>A+</item>-->
     <!--        <item>B+</item>-->
