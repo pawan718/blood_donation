@@ -12,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="20dp">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp">
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="match_parent"
@@ -61,11 +61,11 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button"
-            android:onClick="mainpage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/round_button_trans"
+            android:onClick="mainpage"
             android:text="@string/log_in"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
 

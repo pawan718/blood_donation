@@ -4,129 +4,205 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".MainActivity3">
 
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="72dp"
-            android:ems="10"
-            android:hint="@string/first_name"
-            android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="15dp"
-            android:ems="10"
-            android:hint="@string/last_name"
-            android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="15dp"
-            android:ems="10"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editTextPhone2"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="15dp"
-            android:ems="10"
-            android:hint="@string/phone_no"
-            android:inputType="phone"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editTextTextPassword2"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="15dp"
-            android:ems="10"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            tools:ignore="TouchTargetSizeCheck" />
-
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editTextTextPostalAddress"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="15dp"
-            android:ems="10"
-            android:hint="@string/address"
-            android:inputType="textPostalAddress"
-            tools:ignore="TouchTargetSizeCheck" />
-
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editTextTextPersonName3"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="15dp"
-
-            android:ems="10"
-            android:hint="@string/enter_your_blood_group"
-            android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
-
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editTextTextPersonName4"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="15dp"
-            android:ems="10"
-            android:hint="Enter your city"
-            android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/register"
-            android:layout_width="121dp"
-            android:layout_height="42dp"
-            android:layout_marginLeft="130dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/round_btn"
-            android:text="@string/register"
-            tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp">
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/textView2"
-            android:layout_width="219dp"
-            android:layout_height="26dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="30dp"
-            android:onClick="login"
-            android:text="@string/already_have_an_account_login"
-            android:textStyle="bold"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/registartion"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/waving" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextTextPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:paddingTop="30dp"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button_trans"
+            android:text="@string/log_in"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+
     </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/don_t_have_an_account_create_account"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="20dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/editTextTextPersonName2"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="80dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:ems="10"-->
+<!--            android:hint="@string/last_name"-->
+<!--            android:inputType="textPersonName"-->
+<!--            tools:ignore="TouchTargetSizeCheck" />-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/editTextTextEmailAddress"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="80dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:ems="10"-->
+<!--            android:hint="@string/email"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            tools:ignore="TouchTargetSizeCheck" />-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/editTextPhone2"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="80dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:ems="10"-->
+<!--            android:hint="@string/phone_no"-->
+<!--            android:inputType="phone"-->
+<!--            tools:ignore="TouchTargetSizeCheck" />-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/editTextTextPassword2"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="80dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:ems="10"-->
+<!--            android:hint="@string/password"-->
+<!--            android:inputType="textPassword"-->
+<!--            tools:ignore="TouchTargetSizeCheck" />-->
+
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/editTextTextPostalAddress"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="80dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:ems="10"-->
+<!--            android:hint="@string/address"-->
+<!--            android:inputType="textPostalAddress"-->
+<!--            tools:ignore="TouchTargetSizeCheck" />-->
+
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/editTextTextPersonName3"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="80dp"-->
+<!--            android:layout_marginTop="15dp"-->
+
+<!--            android:ems="10"-->
+<!--            android:hint="@string/enter_your_blood_group"-->
+<!--            android:inputType="textPersonName"-->
+<!--            tools:ignore="TouchTargetSizeCheck" />-->
+
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/editTextTextPersonName4"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="80dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:ems="10"-->
+<!--            android:hint="Enter your city"-->
+<!--            android:inputType="textPersonName"-->
+<!--            tools:ignore="TouchTargetSizeCheck" />-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/register"-->
+<!--            android:layout_width="121dp"-->
+<!--            android:layout_height="42dp"-->
+<!--            android:layout_marginLeft="130dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:background="@drawable/round_btn"-->
+<!--            android:text="@string/register"-->
+<!--            tools:ignore="TouchTargetSizeCheck" />-->
+
+<!--        <com.google.android.material.textview.MaterialTextView-->
+<!--            android:id="@+id/textView2"-->
+<!--            android:layout_width="219dp"-->
+<!--            android:layout_height="26dp"-->
+<!--            android:layout_marginLeft="70dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:onClick="login"-->
+<!--            android:text="@string/already_have_an_account_login"-->
+<!--            android:textStyle="bold"-->
+<!--            tools:ignore="TouchTargetSizeCheck" />-->
+<!--    </LinearLayout>-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
