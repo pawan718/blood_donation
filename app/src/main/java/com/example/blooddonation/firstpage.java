@@ -66,10 +66,10 @@ public class firstpage extends AppCompatActivity {
 
 
 
-//        if(auth.getCurrentUser() != null){
-//            Intent intent = new Intent(firstpage.this, Mainpage.class);
-//            startActivity(intent);
-//        }
+        if(auth.getCurrentUser() != null){
+            Intent intent = new Intent(firstpage.this, Mainpage.class);
+            startActivity(intent);
+            }
 
     }
 

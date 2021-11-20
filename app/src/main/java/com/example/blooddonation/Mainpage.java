@@ -65,7 +65,7 @@ public class Mainpage extends AppCompatActivity {
         startActivity(intent3);
     }
     public void maps(View view){
-        Intent intent4 = new Intent(this, MapsActivity.class);
+        Intent intent4 = new Intent(this, usersdata.class);
         startActivity(intent4);
     }
 }

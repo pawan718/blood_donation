@@ -9,7 +9,6 @@ public class Users {
         this.address = address;
         this.bloodgroup = bloodgroup;
         this.city = city;
-
     }
 public  Users(){}
 
@@ -69,5 +68,6 @@ public  Users(){}
    public String getCity(){return city;}
    public void setCity(){ this.city = city;}
 
-    String name , email , phone_no, password, address,bloodgroup, city ,pan;
+
+    String name , email , phone_no, password, address,bloodgroup, city , pan;
 }
