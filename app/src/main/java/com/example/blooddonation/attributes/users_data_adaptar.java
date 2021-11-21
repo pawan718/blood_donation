@@ -31,7 +31,6 @@ public class users_data_adaptar extends FirebaseRecyclerAdapter<Mainmodel, users
         holder.name.setText(model.getName());
         holder.blood.setText(model.getBlood());
         holder.email.setText(model.getEmail());
-
     }
 
     @NonNull
@@ -44,16 +43,12 @@ public class users_data_adaptar extends FirebaseRecyclerAdapter<Mainmodel, users
     class myviewholder extends RecyclerView.ViewHolder{
         CircleImageView img;
         TextView name , blood, email;
-
         public myviewholder(@NonNull View itemView) {
             super(itemView);
             img =(CircleImageView) itemView.findViewById(R.id.img1);
             name = (TextView)itemView.findViewById(R.id.textname);
             blood = (TextView)itemView.findViewById(R.id.textblood);
             email = (TextView)itemView.findViewById(R.id.textemail);
-
-
-
         }
     }
 }

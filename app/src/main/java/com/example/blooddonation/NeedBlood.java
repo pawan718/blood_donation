@@ -39,8 +39,6 @@ public class NeedBlood extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
-
                 if(!blood.getText().toString().isEmpty() && !message.getText().toString().isEmpty()){
                     firebaseDatabase = FirebaseDatabase.getInstance();
 

@@ -17,7 +17,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FcmNotificationsSender  {
+public class FcmNotificationsSender {
 
     String userFcmToken;
     String title;
@@ -28,7 +28,7 @@ public class FcmNotificationsSender  {
 
     private RequestQueue requestQueue;
     private final String postUrl = "https://fcm.googleapis.com/fcm/send";
-    private final String fcmServerKey ="AAAAcg9F19w:APA91bFmMCxqFFXw9vfv1fsE3OAnFo6czgcua9AHi0Vqf_dCP5fkAjVnk6YQik-cnDd9W2PXFRaJiUF89LWPJCzB8EyNV2FJ5hM6mNLs5mjots3_5zXyfbfqTa-CiitDTCWph3T1DUGc";
+    private final String fcmServerKey = "AAAAcg9F19w:APA91bFmMCxqFFXw9vfv1fsE3OAnFo6czgcua9AHi0Vqf_dCP5fkAjVnk6YQik-cnDd9W2PXFRaJiUF89LWPJCzB8EyNV2FJ5hM6mNLs5mjots3_5zXyfbfqTa-CiitDTCWph3T1DUGc";
 
     public FcmNotificationsSender(String userFcmToken, String title, String body, Context mContext, Activity mActivity) {
         this.userFcmToken = userFcmToken;
@@ -49,8 +49,8 @@ public class FcmNotificationsSender  {
             JSONObject notiObject = new JSONObject();
             notiObject.put("title", title);
             notiObject.put("body", body);
-            notiObject.put("icon", "icon"); // enter icon that exists in drawable only
-
+            notiObject.put("icon", "icon");
+            // enter icon that exists in drawable only
 
 
             mainObj.put("notification", notiObject);
@@ -59,38 +59,27 @@ public class FcmNotificationsSender  {
             JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, postUrl, mainObj, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
-
                     // code run is got response
-
                 }
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     // code run is got error
-
                 }
             }) {
                 @Override
                 public Map<String, String> getHeaders() throws AuthFailureError {
-
-
                     Map<String, String> header = new HashMap<>();
                     header.put("content-type", "application/json");
                     header.put("authorization", "key=" + fcmServerKey);
                     return header;
-
-
                 }
             };
             requestQueue.add(request);
 
-
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
-
-
 
     }
 }
