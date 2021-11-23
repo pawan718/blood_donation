@@ -1,64 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".Mainpage">
-
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button5"
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginRight="100dp"
-            android:background="@drawable/round_btn"
+            android:layout_height="200dp"
+            android:layout_weight="1"
             android:onClick="needblood"
-            android:text="@string/need_blood" />
+            app:cardBackgroundColor="#00FFFFFF">
 
-        <Button
-            android:id="@+id/button7"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_btn_trans"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:contentDescription="Blood"
+                    android:src="@drawable/blood" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Need Blood "
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="70dp"
-            android:layout_marginRight="100dp"
-            android:background="@drawable/round_btn"
+            android:layout_height="200dp"
+            android:layout_weight="1"
             android:onClick="needocygen"
-            android:text="Need Oxygen" />
+            app:cardBackgroundColor="#00FFFFFF">
 
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="80dp"
-            android:layout_marginRight="100dp"
-            android:background="@drawable/round_btn"
-            android:onClick="maps"
-            android:text="@string/donate_blood" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_btn_trans"
+                android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@drawable/round_btn"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginRight="100dp"
-            android:text="help to other donors" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/oxygen" />
 
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Need Oxygen "
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:elevation="50dp"
+                    android:padding="90dp"
+                    android:onClick="needocygen"
+                    app:cardBackgroundColor="#00FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_btn_trans"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/blooddonate" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Donate Blood"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:elevation="50dp"
+                    android:padding="90dp"
+                    app:cardBackgroundColor="#00FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_btn_trans"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/donate" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Donate Now "
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+</LinearLayout>
