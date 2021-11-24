@@ -87,7 +87,7 @@
                     android:layout_weight="1"
                     android:elevation="50dp"
                     android:padding="90dp"
-                    android:onClick="needocygen"
+                    android:onClick="donateBlood"
                     app:cardBackgroundColor="#00FFFFFF">
 
                     <LinearLayout

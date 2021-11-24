@@ -36,10 +36,6 @@ public class Mainpage extends AppCompatActivity {
 
     }
 
-
-
-
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
@@ -64,7 +60,7 @@ public class Mainpage extends AppCompatActivity {
         Intent intent3 = new Intent(this,NeedOxygen.class);
         startActivity(intent3);
     }
-    public void maps(View view){
+    public void donateBlood(View view){
         Intent intent4 = new Intent(this, usersdata.class);
         startActivity(intent4);
     }

@@ -47,26 +47,21 @@ public class MainActivity3 extends AppCompatActivity {
 
         database = FirebaseDatabase.getInstance();
 
-        binding.register.setOnClickListener(new View.OnClickListener() {
-                                                @Override
-                                                public void onClick(View v) {
-                                                    auth.createUserWithEmailAndPassword(binding.editTextTextEmailAddress.getText().toString(), binding.editTextTextPassword2.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                                                        @Override
-                                                        public void onComplete(@NonNull Task<AuthResult> task) {
-                                                            if (task.isSuccessful()) {
-                                                                Users users = new Users(binding.editTextTextPersonName.getText().toString(), binding.editTextTextEmailAddress.getText().toString(), binding.editTextPhone2.getText().toString(),
-                                                                        binding.editTextTextPassword2.getText().toString(), binding.editTextTextPostalAddress.getText().toString(), binding.editTextTextPersonName3.getText().toString(), binding.editTextTextPersonName4.getText().toString());
+        binding.register.setOnClickListener(v -> auth.createUserWithEmailAndPassword(binding.editTextTextEmailAddress.getText().toString(), binding.editTextTextPassword2.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
+                    Users users = new Users(binding.editTextTextPersonName.getText().toString(), binding.editTextTextEmailAddress.getText().toString(), binding.editTextPhone2.getText().toString(),
+                            binding.editTextTextPassword2.getText().toString(), binding.editTextTextPostalAddress.getText().toString(), binding.editTextTextPersonName3.getText().toString(), binding.editTextTextPersonName4.getText().toString());
 
-                                                                String id = task.getResult().getUser().getUid();
-                                                                database.getReference().child("users").child(id).setValue(users);
-                                                                Toast.makeText(MainActivity3.this, "user registered successfuly", Toast.LENGTH_SHORT).show();
-                                                            } else {
-                                                                Toast.makeText(MainActivity3.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                                                            }
-                                                        }
-                                                    });
-                                                }
-                                            }
+                    String id = task.getResult().getUser().getUid();
+                    database.getReference().child("users").child(id).setValue(users);
+                    Toast.makeText(MainActivity3.this, "user registered successfuly", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(MainActivity3.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                }
+            }
+        })
         );
 
     }

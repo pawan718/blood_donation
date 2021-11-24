@@ -1,132 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity3">
 
 
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="First Name">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextTextPersonName"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="72dp"
-            android:ems="10"
-            android:hint="@string/first_name"
-            android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Last Name">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextTextPersonName2"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="15dp"
-            android:ems="10"
-            android:hint="@string/last_name"
-            android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="demo@gmail.com">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="15dp"
-            android:ems="10"
-            android:hint="@string/email"
             android:inputType="textEmailAddress"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="9631---------"
+        app:prefixText="+91">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextPhone2"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="15dp"
-            android:ems="10"
-            android:hint="@string/phone_no"
-            android:inputType="phone"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextTextPassword2"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="15dp"
-            android:ems="10"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:inputType="textPassword" />
 
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Address">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextTextPostalAddress"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="15dp"
-            android:ems="10"
-            android:hint="@string/address"
-            android:inputType="textPostalAddress"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:inputType="text"
+            android:maxLines="1" />
 
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Blood Group">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextTextPersonName3"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="15dp"
+            android:inputType="text" />
 
-            android:ems="10"
-            android:hint="@string/enter_your_blood_group"
-            android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
 
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="City">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextTextPersonName4"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="15dp"
-            android:ems="10"
-            android:hint="Enter your city"
-            android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:inputType="text" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/register"
-            android:layout_width="121dp"
-            android:layout_height="42dp"
-            android:layout_marginLeft="130dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/round_btn"
-            android:text="@string/register"
-            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/textView2"
-            android:layout_width="219dp"
-            android:layout_height="26dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="30dp"
-            android:onClick="login"
-            android:text="@string/already_have_an_account_login"
-            android:textStyle="bold"
-            tools:ignore="TouchTargetSizeCheck" />
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register"
+        android:layout_width="121dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_btn"
+        android:text="@string/register"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:onClick="login"
+        android:text="@string/already_have_an_account_login"
+        android:textStyle="bold"
+        tools:ignore="TouchTargetSizeCheck" />
+</LinearLayout>
