@@ -4,84 +4,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EDEDED"
-    android:backgroundTint="#F1F3EF"
+    android:padding="20dp"
     tools:context=".NeedBlood">
 
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/edittextname"
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+           android:hint="Full Name "
+           android:layout_height="wrap_content">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="textPersonName"
+               android:id="@+id/name"/>
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/bloodMenu"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginRight="70dp"
-            android:hint="Enter your name" />
+            android:hint="@string/select_your_blood_group">
 
-        <EditText
-            android:id="@+id/editbloodgroup"
+            <AutoCompleteTextView
+                android:labelFor="@+id/dropdown_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:textColor="@color/white"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="70dp"
-            android:ems="10"
-            android:hint="Enter your blood group"
-            android:inputType="textPersonName" />
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:hint="9631---------"
+            app:prefixText="+91"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/ContactNumber"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-
-        <EditText
-            android:id="@+id/editTextPhone3"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_marginLeft="70dp"
-            android:hint="Enter your mobile number"
-            android:layout_marginRight="70dp"
-            android:layout_marginTop="40dp"
-            android:inputType="phone"
-           />
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:hint="demo@gmail.com"
+            app:prefixText="+91"
+            android:layout_height="wrap_content">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:id="@+id/Email"
+                android:maxLines="1"
+                />
 
-        <EditText
-            android:id="@+id/editTextTextEmailAddress3"
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="70dp"
-            android:hint="Enter your email id"
-            android:ems="10"
-            android:inputType="textEmailAddress" />
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:hint="Message" android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/editmessage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:ems="10"
-            android:layout_marginRight="70dp"
-            android:layout_marginLeft="70dp"
-            android:hint="any message"
-            android:inputType="textPersonName" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/message"
+                android:maxLines="1"
+                />
 
-        <Button
-            android:id="@+id/request"
-            android:layout_width="match_parent"
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:gravity="center"
+            android:id="@+id/requestBloodButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginRight="100dp"
-            android:background="@drawable/round_btn"
-            android:text="Request" />
+            android:text="Submit"/>
 
 
     </LinearLayout>

@@ -26,7 +26,6 @@ public class firstpage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityFirstpageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        getSupportActionBar().hide();
         auth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(firstpage.this);
         progressDialog.setTitle("Login");

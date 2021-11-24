@@ -19,16 +19,15 @@ public class NeedOxygen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_need_oxygen);
         FirebaseMessaging.getInstance().subscribeToTopic("all");
-
-        EditText oxygen = findViewById(R.id.oxygen);
-        EditText message2 = findViewById(R.id.message2);
+        EditText message2 = findViewById(R.id.message);
         Button request2 = findViewById(R.id.request2);
+        String oxygen = "O";
 
         request2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!oxygen.getText().toString().isEmpty() && !message2.getText().toString().isEmpty()){
-                    FcmNotificationsSender sender = new FcmNotificationsSender("/topics/all",oxygen.getText().toString(),
+                if(!oxygen.toString().isEmpty() && !message2.getText().toString().isEmpty()){
+                    FcmNotificationsSender sender = new FcmNotificationsSender("/topics/all",oxygen.toString(),
                             message2.getText().toString(), getApplicationContext(),NeedOxygen.this);
 
                     sender.SendNotifications();

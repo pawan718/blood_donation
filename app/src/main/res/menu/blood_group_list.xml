@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/APositive"
+        android:title="A+" />
+    <item android:id="@+id/ANeg"
+        android:title="A-" />
+    <item android:id="@+id/BPositive"
+        android:title="B+" />
+    <item android:id="@+id/BNeg"
+        android:title="B-" />
+    <item android:id="@+id/ABPositive"
+        android:title="AB+" />
+    <item android:id="@+id/ABNeg"
+        android:title="AB-" />
+    <item android:id="@+id/OPositive"
+        android:title="O+" />
+    <item android:id="@+id/ONeg"
+        android:title="O-" />
+</menu>
