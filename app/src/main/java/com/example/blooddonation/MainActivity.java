@@ -1,6 +1,7 @@
 package com.example.blooddonation;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.app.ActivityOptions;
 import android.content.Intent;

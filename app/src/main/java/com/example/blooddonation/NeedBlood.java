@@ -1,8 +1,10 @@
 package com.example.blooddonation;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -37,9 +39,9 @@ public class NeedBlood extends AppCompatActivity {
         EditText message = findViewById(R.id.message);
         Button request = findViewById(R.id.requestBloodButton);
 
-        String arr [] = {"A+", "A-" , "B+" , "B-" , "AB+", "AB-", "O+", "O-"};
-        ArrayAdapter  arrayAdapter = new ArrayAdapter(getBaseContext() , R.layout.textview_drop_down , arr);
-        AutoCompleteTextView  autoCompleteTextView = (AutoCompleteTextView) bloodMenu.getEditText();
+        String arr[] = {"A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"};
+        ArrayAdapter arrayAdapter = new ArrayAdapter(getBaseContext(), R.layout.textview_drop_down, arr);
+        AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) bloodMenu.getEditText();
         if (autoCompleteTextView != null) {
             autoCompleteTextView.setAdapter(arrayAdapter);
         }

@@ -13,15 +13,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
         android:orientation="horizontal">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="180dp"
             android:layout_weight="1"
-            android:onClick="needblood"
-            app:cardBackgroundColor="#00FFFFFF">
+            android:onClick="needblood">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,10 +45,9 @@
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="180dp"
             android:layout_weight="1"
-            android:onClick="needocygen"
-            app:cardBackgroundColor="#00FFFFFF">
+            android:onClick="needocygen">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -78,17 +75,15 @@
     <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
                 android:orientation="horizontal">
 
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="180dp"
                     android:layout_weight="1"
                     android:elevation="50dp"
                     android:padding="90dp"
-                    android:onClick="donateBlood"
-                    app:cardBackgroundColor="#00FFFFFF">
+                    android:onClick="donateBlood">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -113,17 +108,16 @@
 
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="180dp"
                     android:layout_weight="1"
-                    android:elevation="50dp"
-                    android:padding="90dp"
-                    app:cardBackgroundColor="#00FFFFFF">
+                    android:elevation="50dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/round_btn_trans"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:onClick="donateMoney">
 
                         <ImageView
                             android:layout_width="match_parent"
