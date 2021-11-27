@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">blood donation</string>
+    <string name="app_name">Med Help</string>
     <string name="last_name">last name</string>
     <string name="enter_your_blood_group">Enter your blood group</string>
     <string name="phone_no">Phone no.</string>
